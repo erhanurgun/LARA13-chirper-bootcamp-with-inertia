@@ -18,6 +18,6 @@ class UserSeeder extends Seeder
             'password' => bcrypt('E4i@wbSve7k$#Nk1Vc'),
         ]);
 
-        \App\Models\User::factory()->count(10)->create();
+        // \App\Models\User::factory()->count(10)->create();
     }
 }
