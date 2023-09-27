@@ -62,6 +62,10 @@ export default function Chirp({chirp}) {
                                     onClick={() => setEditing(true)}>
                                     Edit
                                 </button>
+                                <Dropdown.Link as="button" href={route('chirps.destroy', chirp.id)} method="delete"
+                                               className="text-red-500 hover:bg-red-50">
+                                    Delete
+                                </Dropdown.Link>
                             </Dropdown.Content>
                         </Dropdown>
                     }
